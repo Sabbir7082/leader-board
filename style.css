@@ -80,7 +80,7 @@ body {
 .container {
     margin: auto;
     width: 870px;
-    height: 570px;
+    /* height: 570px; */
     background-color: #FFFFFF;
     padding: 20px;
 
@@ -234,4 +234,40 @@ hr {
     background-color: #ff4a5f45;
     border-radius: 5px;
     padding: 0 15px;
+}
+
+/* --------course-end---- */
+
+@media only screen and (max-width:688px) {
+
+    .container {
+        width: 600px;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-tittle {
+        margin: 0 auto;
+    }
+
+    .course-tittle {
+        margin: 0 auto;
+    }
 }
